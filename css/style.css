@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300);
+
+@font-face {
+    font-family: 'antonioregular';
+    src: url('../fonts/antonio-regular-webfont.eot');
+    src: url('../fonts/antonio-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/antonio-regular-webfont.woff2') format('woff2'),
+         url('../fonts/antonio-regular-webfont.woff') format('woff'),
+         url('../fonts/antonio-regular-webfont.ttf') format('truetype'),
+         url('../fonts/antonio-regular-webfont.svg#antonioregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a,
+a:hover,
+a:active,
+a:focus{
+	outline:0 !important;
+}
+
+.container-fluid {
+    padding-right: 109px;
+    padding-left: 109px;
+}
+
+.navbar-default{
+	background-color: #FAFAFA;
+	border-bottom:3px solid #00AFE1;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;	
+	min-height: 95px;
+	font-family: 'antonioregular';
+}
+
+.navbar-brand {
+	width: 333px;
+	margin-top: 9px;
+}
+.telefono-container{
+	width:346px;
+	margin-top: 10px;
+	margin-bottom:10px;
+	border-left: 2px solid #C9C9C9;
+}
+
+.telefono{
+	width:50px;
+	float:left;
+	padding-left:10px;
+}
+
+.telefono-text{
+	width:304px;
+	float:right;
+	color:#36A9E0;
+	font-size: 1.5em;
+}
