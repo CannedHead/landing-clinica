@@ -17,6 +17,87 @@ html,body{
 
 }
 
+@font-face {
+    font-family: 'novablack';
+    src: url('../fonts/nova_alt_black-webfont.eot');
+    src: url('../fonts/nova_alt_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nova_alt_black-webfont.woff') format('woff'),
+         url('../fonts/nova_alt_black-webfont.ttf') format('truetype'),
+         url('../fonts/nova_alt_black-webfont.svg#novablack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'novabold';
+    src: url('../fonts/nova_alt_bold-webfont.eot');
+    src: url('../fonts/nova_alt_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nova_alt_bold-webfont.woff') format('woff'),
+         url('../fonts/nova_alt_bold-webfont.ttf') format('truetype'),
+         url('../fonts/nova_alt_bold-webfont.svg#novabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'novaextrabold';
+    src: url('../fonts/nova_alt_extrabold-webfont.eot');
+    src: url('../fonts/nova_alt_extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nova_alt_extrabold-webfont.woff') format('woff'),
+         url('../fonts/nova_alt_extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/nova_alt_extrabold-webfont.svg#novaextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'novalight';
+    src: url('../fonts/nova_alt_light-webfont.eot');
+    src: url('../fonts/nova_alt_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nova_alt_light-webfont.woff') format('woff'),
+         url('../fonts/nova_alt_light-webfont.ttf') format('truetype'),
+         url('../fonts/nova_alt_light-webfont.svg#novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'novaregular';
+    src: url('../fonts/nova_alt_regular-webfont.eot');
+    src: url('../fonts/nova_alt_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nova_alt_regular-webfont.woff') format('woff'),
+         url('../fonts/nova_alt_regular-webfont.ttf') format('truetype'),
+         url('../fonts/nova_alt_regular-webfont.svg#novaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'novasemibold';
+    src: url('../fonts/nova_alt_semibold-webfont.eot');
+    src: url('../fonts/nova_alt_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nova_alt_semibold-webfont.woff') format('woff'),
+         url('../fonts/nova_alt_semibold-webfont.ttf') format('truetype'),
+         url('../fonts/nova_alt_semibold-webfont.svg#novasemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'novathin';
+    src: url('../fonts/nova_alt_thin-webfont.eot');
+    src: url('../fonts/nova_alt_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nova_alt_thin-webfont.woff') format('woff'),
+         url('../fonts/nova_alt_thin-webfont.ttf') format('truetype'),
+         url('../fonts/nova_alt_thin-webfont.svg#novathin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 a,
 a:hover,
 a:active,
