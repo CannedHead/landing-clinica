@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,300);
 
+html,body{
+	height: 100%;
+}
+
 @font-face {
     font-family: 'antonioregular';
     src: url('../fonts/antonio-regular-webfont.eot');
@@ -33,6 +37,7 @@ a:focus{
 	border-radius: 0px;	
 	min-height: 95px;
 	font-family: 'antonioregular';
+	margin-bottom: 0px;
 }
 
 .navbar-brand {
@@ -41,20 +46,36 @@ a:focus{
 }
 .telefono-container{
 	width:346px;
-	margin-top: 10px;
-	margin-bottom:10px;
+	margin-top: 8px;
+	margin-bottom:8px;
 	border-left: 2px solid #C9C9C9;
+	padding-top: 5px;
 }
 
 .telefono{
-	width:50px;
+	width:45px;
 	float:left;
-	padding-left:10px;
+	margin-left:44px;
+	margin-top: 5px;
 }
 
 .telefono-text{
-	width:304px;
+	width:250px;
 	float:right;
 	color:#36A9E0;
 	font-size: 1.5em;
+}
+
+.bg{
+	height:100%;
+	background: url(../img/bg.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
+}
+
+.layer{
+	background-color: rgba(0,0,0,0.5)
 }
