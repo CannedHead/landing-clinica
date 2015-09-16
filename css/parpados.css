@@ -1,3 +1,16 @@
-.landing-col { padding: 0px; } // resets .col-xs-12 padding-right and padding-left
+.no-padding { 
+	padding: 0px; 
+}
 
-.landing-col img { width:100%; }
+.img-responsive{
+	width: 100%
+
+}
+
+.layer { 
+	position: absolute;
+	z-index: 2;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
