@@ -1,0 +1,6 @@
+
+RewriteEngine On 
+RewriteRule ^dentales$ dentales.html [NC,L]
+RewriteRule ^implantes$ implantes.html [NC,L]
+RewriteRule ^medicinaestetica$ medicinaestetica.html [NC,L]
+RewriteRule ^implantes$ implantes.html [NC,L]
