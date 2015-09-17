@@ -168,7 +168,7 @@ a:focus{
 
 .layer{
 	height:100%;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.7);
 }
 
 .form-header{
@@ -224,7 +224,7 @@ a:focus{
 }
 
 .titulo{
-	font-family: 'novabold';
+	font-family: 'novaregular';
 	color:#FFF;
 	font-size: 2em;
 	margin-bottom: 50px;
@@ -232,7 +232,7 @@ a:focus{
 }
 
 .hero{
-	font-family: 'antonioregular';
+	font-family: 'novalight';
 	font-size:1.5em; 
 	color:#FFF;
 	margin-top: 45px;
