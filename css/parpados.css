@@ -108,13 +108,6 @@ html,body{
 
 }
 
-.layer { 
-	position: absolute;
-	z-index: 1;
-	height: 100%;
-	width: 100%;
-	background-color: rgba(0,0,0,0.5);
-}
 .titulo { 
 	font-family: 'novabold';
 	color:#FFF;
@@ -171,24 +164,32 @@ a:focus{
     padding-left: 109px;
 }
 
-
-
 .bg{
-	height:100%;
+    height:100%;
 	background: url(../img/bg-parpados.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-
 }
+
+.layer { 
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
 .footer{
 	background-color: #34A2D7;
 }
+
 .social{
 	margin-top: 70px;
 	margin-bottom: 40px;
 }
+
 .social2{
 	margin-top: 30px;
 	margin-bottom: 40px;
@@ -205,12 +206,21 @@ a:focus{
     padding-top:5px;
     padding-bottom: 5px;
     font-family: "antonioregular";
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     text-align: center;
 }
 
+.social-buttons{
+    margin-bottom:30px;
+}
 
 @media (max-width: 768px) {
+    .formulario {
+        padding: 25px 10px;
+    }
+    .bg{
+        height:700px;
+    }
     .container-fluid{
         padding-left: 20px;
     } 
