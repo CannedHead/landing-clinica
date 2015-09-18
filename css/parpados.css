@@ -194,8 +194,27 @@ a:focus{
 	margin-bottom: 40px;
 }
 
-.center-table
-{
+.center-table{
   margin: 0 auto !important;
   float: none !important;
+}
+
+.contact{
+    background-color: #1D70B7;
+    color:#FFF;
+    padding-top:5px;
+    padding-bottom: 5px;
+    font-family: "antonioregular";
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .container-fluid{
+        padding-left: 20px;
+    } 
+    .navbar-brand{
+        width: 300px;
+    }
 }
