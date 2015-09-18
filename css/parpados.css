@@ -214,6 +214,34 @@ a:focus{
     margin-bottom:30px;
 }
 
+.terminos,
+.terminos:active{
+    text-transform: none;
+    text-decoration: none;
+    color:#BBB;
+}
+
+.terminos:hover,
+.terminos:focus{
+    text-transform: none;
+    text-decoration: none;
+    color:#999;
+}
+
+.cond,
+.cond:active{
+    text-transform: none;
+    text-decoration: none;
+    color:#FFF;
+}
+
+.cond:hover,
+.cond:focus{
+    text-transform: none;
+    text-decoration: none;
+    color:#EEE;
+}
+
 @media (max-width: 768px) {
     .formulario {
         padding: 25px 10px;

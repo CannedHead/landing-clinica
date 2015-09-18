@@ -69,7 +69,7 @@
           <div class="col-sm-4 col-sm-offset-4">
             <img class="img-responsive" src="img/titulo-parpados.svg">
             <p class="text-center parrafo" >ES MUY COMÚN QUE LOS HOMBRES Y MUJERES CONSULTEN POR LA CAÍDA DE LOS PÁRPADOS YA QUE ESTA CONDICIÓN AFECTA NO SOLO EL ASPECTO FISICO, SI NO LA SALUD VISUAL. ES IMPORTANTE ASISTIR A UNA VALORACIÓN PREVIA CON EL ESPECIALISTA. </p>
-            <h5 class="text-center condiciones" >APLICA CONDICIONES Y RESTRICCIONES*</h5>     
+            <h5 class="text-center condiciones" ><a href="http://clinicaloyola.com.co/Implantes-Dentales/la-pol%C3%ADtica-de-condiciones-y-restricciones.html" target="_blank" class="cond">APLICA CONDICIONES Y RESTRICCIONES*</a></h5>     
           </div> 
         </div>
       </div>
@@ -80,16 +80,21 @@
 
           <form class=" col-xs-12 formulario">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="NOMBRE">
+              <input type="text" class="form-control" placeholder="NOMBRE" required>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="EMAIL">
+              <input type="email" class="form-control" placeholder="EMAIL" required>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="TELÉFONO">
+              <input type="text" class="form-control" placeholder="TELÉFONO" required>
             </div>
             <div class="form-group">
               <textarea class="form-control" rows="3" placeholder="MENSAJE"></textarea>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" required> <a href="http://clinicaloyola.com.co/Implantes-Dentales/la-pol%C3%ADtica-de-condiciones-y-restricciones.html" target="_blank" class="terminos">He leído y acepto los términos &amp; condiciones de las políticas de privacidad.</a> 
+              </label>
             </div>
             <button type="submit" class="btn btn-default">ENVIAR</button>
           </form>
@@ -131,5 +136,29 @@
         </ul>
       </div>
     </div>
+    <script type="text/javascript">
+      $('#landingform').submit(function(evt){
+        evt.preventDefault();
+        var url = '/';
+        var formData = $(this).serialize();       
+
+        $.ajax(url,{
+            data : formData,
+            type : "POST",         
+            success : function(response){ 
+              if(response.success){
+                    $('#consultaform').fadeOut( "slow", function() {
+                      $('#success-panel').show().fadeIn("slow");
+                      socket.emit('gratis', {consulta: response.consulta}); //cambiar serialize por consulta q retorna para no calcular todo denuevo
+                    });               
+                  }
+                  else{
+                    console.log(response.err);
+                    errAlert('<strong>Atencion!</strong> ' + response.err);
+                  }              
+                }
+              });
+      });
+    </script>
    </body>
 </html>
