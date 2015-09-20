@@ -134,6 +134,11 @@ a:focus{
 	width: 333px;
 	margin-top: 9px;
 }
+
+.img-responsive{
+	width:100%;
+}
+
 .telefono-container{
 	width:346px;
 	margin-top: 8px;
@@ -157,7 +162,7 @@ a:focus{
 }
 
 .bg{
-	height:100%;
+	height:120%;
 	background: url(../img/bg-dentales.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -167,7 +172,9 @@ a:focus{
 }
 
 .layer{
+	position: absolute;
 	height:100%;
+	width:100%;
 	background-color: rgba(0,0,0,0.7);
 }
 
@@ -185,6 +192,7 @@ a:focus{
 	margin-bottom: 0px;
 	font-size: 1.6em;
 	margin-top: 7%;
+	height: 70px;
 }
 
 .form-header span{
@@ -193,7 +201,7 @@ a:focus{
 
 .formulario { 
 	background-color: #FFF;
-	padding: 50px 12%;
+	padding: 20px 12% 50px;
 }
 
 .formulario label{
@@ -239,6 +247,16 @@ a:focus{
 	padding-bottom: 10px;
 }
 
+.titulo-dos{
+	font-family: 'antonioregular';
+	color:#FFF;
+	font-size: 1.5em;
+	margin-bottom: 0px;
+	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.4);
+	margin-top: 7%;
+	padding-bottom: 10px;
+}
+
 .hero{
 	font-family: 'novaregular';
 	font-size:0.8em; 
@@ -253,7 +271,6 @@ a:focus{
 	font-size:1.0em; 
 	color:#FFF;
 	margin-top: 45px;
-	margin-bottom: 40px;
 	text-transform: uppercase;
 }
 
@@ -278,4 +295,64 @@ a:focus{
 	-webkit-box-shadow: 0px 10px 29px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 10px 29px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 10px 29px 0px rgba(0,0,0,0.75);
+}
+
+.contact{
+    background-color: #1D70B7;
+    color:#FFF;
+    padding-top:5px;
+    padding-bottom: 5px;
+    font-family: "antonioregular";
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.terminos,
+.terminos:active{
+    text-transform: none;
+    text-decoration: none;
+    color:#BBB;
+}
+
+.terminos:hover,
+.terminos:focus{
+    text-transform: none;
+    text-decoration: none;
+    color:#999;
+}
+
+.cond,
+.cond:active{
+    text-transform: none;
+    text-decoration: none;
+    color:#FFF;
+}
+
+.cond:hover,
+.cond:focus{
+    text-transform: none;
+    text-decoration: none;
+    color:#EEE;
+}
+
+
+@media (max-width: 480px) {
+	.form-header {
+		padding-bottom:65px;
+	}
+}
+
+@media (max-width: 768px) {
+    .formulario {
+        padding: 20px 10px 25px;
+    }
+    .bg{
+        height:1490px;
+    }
+    .container-fluid{
+        padding-left: 20px;
+    } 
+    .navbar-brand{
+        width: 300px;
+    }
 }
