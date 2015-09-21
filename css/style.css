@@ -161,7 +161,7 @@ a:focus{
 }
 
 .bg{
-	height:122%;
+	height:126%;
 	background: url(../img/bg.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
