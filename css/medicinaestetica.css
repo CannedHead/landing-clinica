@@ -110,6 +110,10 @@ a:focus{
 	outline:0 !important;
 }
 
+.img-responsive{
+	width:100%;
+}
+
 .no-padding{
 	padding:0;
 }
@@ -157,7 +161,7 @@ a:focus{
 }
 
 .bg{
-	height:130%;
+	height:126%;
 	background: url(../img/bg-estetica.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -167,7 +171,9 @@ a:focus{
 }
 
 .layer{
+	position: absolute;
 	height:100%;
+	width:100%;
 	background-color: rgba(54,169,223,0.7);
 }
 
@@ -272,4 +278,76 @@ a:focus{
 	-webkit-box-shadow: 0px 10px 29px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 10px 29px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 10px 29px 0px rgba(0,0,0,0.75);
+}
+
+.social{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.contact{
+    background-color: #1D70B7;
+    color:#FFF;
+    padding-top:5px;
+    padding-bottom: 5px;
+    font-family: "antonioregular";
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.form-horizontal .control-label{
+	text-align: left !important;
+	padding-left:0px;
+}
+
+.checkbox{
+    margin-bottom: 10px !important;
+}
+
+.terminos,
+.terminos:active{
+    text-transform: none;
+    text-decoration: none;
+    color:#BBB;
+}
+
+.terminos:hover,
+.terminos:focus{
+    text-transform: none;
+    text-decoration: none;
+    color:#999;
+}
+
+.cond,
+.cond:active{
+    text-transform: none;
+    text-decoration: none;
+    color:#FFF;
+}
+
+.cond:hover,
+.cond:focus{
+    text-transform: none;
+    text-decoration: none;
+    color:#EEE;
+}
+
+
+
+@media (max-width: 768px) {
+	.form-horizontal .control-label{
+		padding-left:15px;
+	}
+    .formulario {
+        padding: 20px 10px 25px;
+    }
+    .bg{
+        height:1490px;
+    }
+    .container-fluid{
+        padding-left: 20px;
+    } 
+    .navbar-brand{
+        width: 300px;
+    }
 }
