@@ -73,19 +73,21 @@
       <div class="no-padding col-xs-12 azul">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
           <h3 class= "text-center form-header"> Oferta <span>Especial</span> </h3>
-
+          <div id="success-panel" class="col-xs-12 formulario hidden">
+            <h2 class="text-center" style="margin-top:20px; margin-bottom:40px;">Gracias! Pronto estarémos en contacto contigo.</h2>
+          </div>
           <form id="form" class=" col-xs-12 formulario" method="post" action="https://mighty-peak-1489.herokuapp.com/register">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="NOMBRE" required>
+              <input type="text" class="form-control" name="name" placeholder="NOMBRE" required>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="EMAIL" required>
+              <input type="email" class="form-control" name="email" placeholder="EMAIL" required>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="TELÉFONO" required>
+              <input type="text" class="form-control" name="phone" placeholder="TELÉFONO" required>
             </div>
             <div class="form-group">
-              <textarea class="form-control" rows="3" placeholder="MENSAJE"></textarea>
+              <textarea class="form-control" rows="3" name="message" placeholder="MENSAJE"></textarea>
             </div>
             <div class="checkbox">
               <label>
@@ -141,15 +143,15 @@
           var url = $(this).attr('action');
           var dataTable = [];
 
-          $('input[type="text"],input[type="email"]').each(function(index,val){
+          $('input[type="text"],input[type="email"],textarea').each(function(index,val){
               dataTable[index]={
                   "value" :$(this).val(),
-                  "name" : $(this).data('name')
+                  "name" : $(this).attr('name')
               }
           });
 
           var formData = {
-              campana: '56007e55b378350e00a6e023',
+              campaign: '56001869e79e97d0116c2188',
               fields: dataTable
           }
 
@@ -158,12 +160,12 @@
              data: formData,
              url: url,
              success: function(response){
-               if(response.success){
+               if(!response.error){
                   $('#form').fadeOut( "slow", function() {
-                    //$('#success-panel').show().fadeIn("slow");                    
+                    $('#success-panel').removeClass("hidden").fadeIn("slow");                    
                   });   
                }else{
-                  errAlert(response.err);
+                  alert(response.err);
                }
              }
           });
