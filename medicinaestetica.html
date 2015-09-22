@@ -7,29 +7,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- for Google -->
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
+        <meta name="description" content="Adquiere el 50% de descuento en limpieza facial, más radiofrecuencia." />
+        <meta name="keywords" content="clinica loyola parpados medicina estetica limpieza facial radiofrecuencia" />
 
-        <meta name="author" content="" />
-        <meta name="copyright" content="" />
-        <meta name="application-name" content="" />
+        <meta name="author" content="Clínica Loyola" />
+        <meta name="copyright" content="Clínica Loyola" />
 
         <!-- for Facebook -->          
-        <meta property="og:title" content="Clinica Loyola " />
+        <meta property="og:title" content="Clínica Loyola | Tu felicidad es lo más importante para nosotros." />
         <meta property="og:type" content="business.business" />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="https://s3-sa-east-1.amazonaws.com/cannedhead.clinicaloyola/landing/estetetica-facebook.jpg" />
         <meta property="og:url" content="" />
-        <meta property="og:description" content="" />
+        <meta property="og:description" content="Adquiere el 50% de descuento en limpieza facial, más radiofrecuencia." />
 
         <!-- for Twitter -->          
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Clinica Loyola" />
-        <meta name="twitter:description" content="" />
-        <meta name="twitter:image" content="" />
-        
+        <meta name="twitter:title" content="Clínica Loyola | Tu felicidad es lo más importante para nosotros." />
+        <meta name="twitter:description" content="Adquiere el 50% de descuento en limpieza facial, más radiofrecuencia." />
+        <meta name="twitter:image" content="https://s3-sa-east-1.amazonaws.com/cannedhead.clinicaloyola/landing/estetica-twitter.jpg" />
+
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/medicinaestetica.css">
     </head>
     <body>
@@ -71,29 +69,32 @@
           <div class="col-md-5 col-md-offset-1">
             <div class="sombra">
               <h2 class="text-center form-header">Oferta <span>Especial</span></h2>
-              <form class=" col-xs-12 form-horizontal formulario">
+              <div id="success-panel" class="col-xs-12 formulario hidden">
+                <h2 class="text-center" style="margin-top:20px; margin-bottom:40px;">Gracias! Pronto estarémos en contacto contigo.</h2>
+              </div>
+              <form id="form" class="col-xs-12 form-horizontal formulario" method="post" action="https://mighty-peak-1489.herokuapp.com/register">
                 <div class="form-group">
                   <label for="inputName" class="col-sm-2 control-label">Nombre</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputName">
+                    <input type="text" class="form-control" id="inputName" name="name">
                   </div>
                 </div>
                 <div class="form-group">
                     <label for="inputEmail" class="col-sm-2 control-label">Email</label>
                     <div class="col-sm-10">
-                      <input type="email" class="form-control" id="inputEmail">
+                      <input type="email" class="form-control" id="inputEmail" name="email">
                     </div>
                 </div>
                 <div class="form-group">
                   <label for="inputPhone" class="col-sm-2 control-label">Teléfono</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputPhone">
+                    <input type="text" class="form-control" id="inputPhone" name="phone">
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="inputMessage" class="col-sm-2 control-label">Mensaje</label>
                   <div class="col-sm-10">
-                    <textarea class="form-control" rows="3"></textarea>
+                    <textarea class="form-control" rows="3" name="message"></textarea>
                   </div>
                 </div>
                 <div class="checkbox col-xs-12 col-sm-10 col-sm-offset-2">
@@ -143,5 +144,44 @@
             </ul>
           </div>
       </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script type="text/javascript">
+
+        $('#form').submit(function(evt){
+
+            evt.preventDefault();
+            var url = $(this).attr('action');
+            var dataTable = [];
+
+            $('input[type="text"],input[type="email"],textarea').each(function(index,val){
+                dataTable[index]={
+                    "value" :$(this).val(),
+                    "name" : $(this).attr('name')
+                }
+            });
+
+            var formData = {
+                campaign: '5601818d3edb550e004b1e73',
+                fields: dataTable
+            }
+
+            $.ajax({
+               type: "POST",
+               data: formData,
+               url: url,
+               success: function(response){
+                 if(!response.error){
+                    $('#form').fadeOut( "slow", function() {
+                      $('#success-panel').removeClass("hidden").fadeIn("slow");                    
+                    });   
+                 }else{
+                    alert(response.err);
+                 }
+               }
+            });
+
+        });
+        
+      </script>
   </body>
 </html>
