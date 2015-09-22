@@ -4,33 +4,29 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Blefaroplastia | Clinica Loyola</title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- for Google -->
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
+        <meta name="description" content="Tu felicidad siempre será el mejor regalo, Blefaroplastia de párpados superiores." />
+        <meta name="keywords" content="blefaroplastia clinica loyola parpados medicina estetica" />
 
-        <meta name="author" content="" />
-        <meta name="copyright" content="" />
-        <meta name="application-name" content="" />
+        <meta name="author" content="Clínica Loyola" />
+        <meta name="copyright" content="Clínica Loyola" />
 
         <!-- for Facebook -->          
-        <meta property="og:title" content="Clinica Loyola " />
+        <meta property="og:title" content="Clínica Loyola | Tu felicidad siempre será el mejor regalo, Blefaroplastia de párpados superiores." />
         <meta property="og:type" content="business.business" />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="https://s3-sa-east-1.amazonaws.com/cannedhead.clinicaloyola/landing/brefaroplastia-facebook.jpg" />
         <meta property="og:url" content="" />
-        <meta property="og:description" content="" />
+        <meta property="og:description" content="Obtén por solo $1'780.000 cirugía de parados superiores." />
 
         <!-- for Twitter -->          
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Clinica Loyola" />
-        <meta name="twitter:description" content="" />
-        <meta name="twitter:image" content="" />
+        <meta name="twitter:title" content="Clínica Loyola | Tu felicidad siempre será el mejor regalo, Blefaroplastia de párpados superiores." />
+        <meta name="twitter:description" content="Tu felicidad siempre será el mejor regalo, Blefaroplastia de párpados superiores." />
+        <meta name="twitter:image" content="https://s3-sa-east-1.amazonaws.com/cannedhead.clinicaloyola/landing/blefaroplastia-twitter.jpg" />
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/parpados.css">
     </head>
@@ -78,7 +74,7 @@
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
           <h3 class= "text-center form-header"> Oferta <span>Especial</span> </h3>
 
-          <form class=" col-xs-12 formulario">
+          <form id="form" class=" col-xs-12 formulario" method="post" action="https://mighty-peak-1489.herokuapp.com/register">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="NOMBRE" required>
             </div>
@@ -136,29 +132,47 @@
         </ul>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript">
-      $('#landingform').submit(function(evt){
-        evt.preventDefault();
-        var url = '/';
-        var formData = $(this).serialize();       
 
-        $.ajax(url,{
-            data : formData,
-            type : "POST",         
-            success : function(response){ 
-              if(response.success){
-                    $('#consultaform').fadeOut( "slow", function() {
-                      $('#success-panel').show().fadeIn("slow");
-                      socket.emit('gratis', {consulta: response.consulta}); //cambiar serialize por consulta q retorna para no calcular todo denuevo
-                    });               
-                  }
-                  else{
-                    console.log(response.err);
-                    errAlert('<strong>Atencion!</strong> ' + response.err);
-                  }              
-                }
-              });
+      $('#form').submit(function(evt){
+
+          evt.preventDefault();
+          var url = $(this).attr('action');
+          var dataTable = [];
+
+          $('input[type="text"],input[type="email"]').each(function(index,val){
+              dataTable[index]={
+                  "value" :$(this).val(),
+                  "name" : $(this).data('name')
+              }
+          });
+
+          var formData = {
+              campana: '56007e55b378350e00a6e023',
+              fields: dataTable
+          }
+
+          $.ajax({
+             type: "POST",
+             data: formData,
+             url: url,
+             success: function(response){
+               if(response.success){
+                  $('#form').fadeOut( "slow", function() {
+                    //$('#success-panel').show().fadeIn("slow");                    
+                  });   
+               }else{
+                  errAlert(response.err);
+               }
+             }
+          });
+
       });
+
+
+
+      
     </script>
    </body>
 </html>
