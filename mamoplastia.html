@@ -223,7 +223,8 @@
                success: function(response){
                  if(!response.error){
                     $('#form').fadeOut( "slow", function() {
-                      $('#success-panel').removeClass("hidden").fadeIn("slow");                    
+                      $('#success-panel').removeClass("hidden").fadeIn("slow");  
+                      $("head").append('<script src="js/cxense.js"></scr' + 'ipt>');                   
                     });   
                  }else{
                     alert(response.err);
