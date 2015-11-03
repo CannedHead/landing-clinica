@@ -1,0 +1,46 @@
+.navbar {
+    position: relative;
+}
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -150px !important;  /* 50% of your logo width */
+    display: block;
+}
+
+.bgmamoplastia{
+    height: 1221px;
+    background: url(../img/bg-mamoplastia.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.titulo{
+	margin-top: 15%;
+}
+
+.form-header {
+    background-color: #36A9DF;
+    border-bottom: 6px solid #017EC1;
+}
+
+.formulario button {
+    background-color: #36A9DF;
+}
+
+.footer {
+    background-color: #36A9DF;
+}
+
+.social{
+	margin-top: 2%;
+}
+
+
+@media (min-width: 768px) {
+	.bgmamoplastia{
+		height:126%;
+	}
+}
