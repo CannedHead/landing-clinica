@@ -162,7 +162,7 @@ a:focus{
 }
 
 .bg{
-	height:120%;
+	height: 145%;
 	background: url(../img/bg-dentales.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
