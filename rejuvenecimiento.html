@@ -183,7 +183,8 @@
                success: function(response){
                  if(!response.error){
                     $('#form').fadeOut( "slow", function() {
-                      $('#success-panel').removeClass("hidden").fadeIn("slow");                
+                      $('#success-panel').removeClass("hidden").fadeIn("slow");  
+                      window.open('http://clinicaloyola.com.co/','_blank');              
                     });   
                  }else{
                     alert(response.err);

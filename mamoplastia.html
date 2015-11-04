@@ -198,7 +198,8 @@
                  if(!response.error){
                     $('#form').fadeOut( "slow", function() {
                       $('#success-panel').removeClass("hidden").fadeIn("slow");  
-                      $("head").append('<script src="js/cxense.js"></scr' + 'ipt>');                   
+                      $("head").append('<script src="js/cxense.js"></scr' + 'ipt>');    
+                      window.open('http://clinicaloyola.com.co/','_blank');               
                     });   
                  }else{
                     alert(response.err);
