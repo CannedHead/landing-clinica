@@ -104,8 +104,16 @@ html,body{
 
 .img-responsive{
 	width: 100%;
+}
 
-
+.navbar {
+    position: relative;
+}
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -150px !important;  /* 50% of your logo width */
+    display: block;
 }
 
 .titulo { 
@@ -247,12 +255,18 @@ a:focus{
         padding: 25px 10px;
     }
     .bg{
-        height:700px;
+        height:1545px;
     }
     .container-fluid{
         padding-left: 20px;
     } 
     .navbar-brand{
         width: 300px;
+    }
+}
+
+@media (min-width:768px){
+    .bg{
+        height: 1100px;
     }
 }
