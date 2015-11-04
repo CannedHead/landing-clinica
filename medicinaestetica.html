@@ -146,6 +146,19 @@
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script type="text/javascript">
+        var source = '-';
+
+        $(document).ready(function() { 
+            source = getParameterByName('source');
+            //document.getElementById("source").value = source;
+        });
+
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
 
         $('#form').submit(function(evt){
 
@@ -164,7 +177,8 @@
 
             var formData = {
                 campaign: '5601818d3edb550e004b1e73',
-                fields: dataTable
+                fields: dataTable,
+                source: source
             }
 
             $.ajax({

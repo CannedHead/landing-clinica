@@ -137,6 +137,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript">
 
+      var source = '-';
+
+      $(document).ready(function() { 
+          source = getParameterByName('source');
+          //document.getElementById("source").value = source;
+      });
+
+      function getParameterByName(name) {
+          name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+          var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+              results = regex.exec(location.search);
+          return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+
       $('#form').submit(function(evt){
 
           evt.preventDefault();
@@ -153,7 +167,8 @@
 
           var formData = {
               campaign: '56001869e79e97d0116c2188',
-              fields: dataTable
+              fields: dataTable,
+              source: source
           }
 
           $.ajax({
