@@ -140,6 +140,7 @@
       $('#form').submit(function(evt){
 
           evt.preventDefault();
+          $('button').prop('disabled', true);
           var url = $(this).attr('action');
           var dataTable = [];
 
