@@ -9,7 +9,7 @@
 }
 
 .bgmamoplastia{
-    height: 1221px;
+    height: 1765px;
     background: url(../img/bg-mamoplastia.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -41,9 +41,21 @@
 .layer{
     background-color: rgba(0, 0, 0, 0.3);
 }
+.liston{
+    width: 23%;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    z-index: 2;
+    top: 10px;
+}
 
 @media (min-width: 768px) {
 	.bgmamoplastia{
-		height:135%;
+		height:175%;
 	}
+
+    .liston{
+    right: -42px;
+    }
 }

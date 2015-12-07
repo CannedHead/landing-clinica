@@ -171,7 +171,7 @@ a:focus{
 }
 
 .bg{
-	height:142%;
+	height:170%;
 	background: url(../img/bg-abdominoplastia.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -246,7 +246,6 @@ a:focus{
 	font-size: 2em;
 	margin-bottom: 50px;
 	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.4);
-	margin-top: 7%;
 }
 
 .hero{
@@ -349,6 +348,15 @@ a:focus{
     text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 }
 
+.liston{
+    width: 23%;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    z-index: 2;
+    top: 10px;
+}
+
 @media (max-width: 768px) {
 	.form-horizontal .control-label{
 		padding-left:15px;
@@ -364,5 +372,8 @@ a:focus{
     } 
     .navbar-brand{
         width: 300px;
+    }
+    .liston{
+        right: 5px;
     }
 }
