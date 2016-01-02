@@ -9,7 +9,7 @@
 }
 
 .bgmamoplastia{
-    height: 1765px;
+    height: 1935px;
     background: url(../img/bg-mamoplastia.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -19,6 +19,11 @@
 
 .titulo{
 	margin-top: 15%;
+}
+
+.subhero {
+    font-family: "novaregular";
+    font-size: 1.4em;
 }
 
 .form-header {
