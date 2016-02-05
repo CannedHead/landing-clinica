@@ -1,0 +1,189 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:700,400);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+
+html, body{
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p{
+	font-family: 'Lato', sans-serif;
+}
+
+a,
+a:hover,
+a:active,
+a:focus{
+	outline:0 !important;
+}
+
+.form-control{
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;	
+}
+
+
+.no-padding{
+	padding:0;
+}
+
+.img-responsive{
+	width:100%;
+}
+
+.abdominoplastia{
+	background-color: #FFCF0B;
+}
+
+.bg{
+	position: absolute;
+}
+
+.abdominoplastia .bg{
+	border-bottom: 40px solid #219CD8;
+}
+
+.img-bg{
+    width:auto;
+    height:50%;
+    left: -250px;
+}
+
+.titulo{
+	margin-top: 120px;
+}
+
+.titulo h2{
+	color:#1B0C00;
+	text-transform: uppercase;
+	margin-top: 94px;
+}
+
+.titulo ul > li > i{
+	color:#219CD8;
+	margin-right: 4px;
+}
+
+.titulo p{
+	font-family: 'Montserrat', sans-serif;
+	color:#1B0C00;
+	text-transform: uppercase;
+	margin-top:20px;
+}
+
+.titulo p > br{
+	display:none;
+}
+
+.formclinica{
+	margin-top: 50px;
+	background-color: #FFF;
+	padding: 2px 0 10px;
+	margin-bottom: 40px;
+}
+
+.btn-form, .btn-form:hover, .btn-form:active, .btn-form:focus{
+	background-color: #259DDA;
+	color:#FFF;
+}
+
+.fondogris{
+	background-color: #E6E6E6;
+	padding:10px 0;
+	border-bottom: 2px solid #4D8AAA; 
+}
+
+.certificado-container{
+	margin-top:30px;
+}
+
+.supersalud{
+   padding: 0 10%;
+   margin: 10px 0 5px;
+}
+
+.certone{
+   padding: 0 3%;
+	margin: 14px 0 0px;
+}
+
+.redes-container{
+	background-color: #FFF;
+}
+
+.redes{
+	color:#1C9BD6;
+	background-color: #FFF;
+	padding:20px 0;
+}
+
+.redes p{
+	font-size: 20px;
+}
+
+.redes ul{
+    margin: 15px auto;
+	text-align: center;
+}
+
+.redes ul > li {
+	background-color:#00A5C5;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+
+.redes ul > li.facebook {
+	padding: 5px 11px 4px;
+}
+
+.redes ul > li.instagram {
+	padding: 5px 9px 4px;
+}
+
+.redes ul > li.twitter {
+	padding: 5px 9px 4px;
+}
+
+.redes ul > li > a {
+	color:#FFF;
+	font-size: 1.1em;
+}
+
+.footer{
+	background-color: #00AFE8;
+}
+
+.subfooter{
+	background-color: #018FC1;
+	color: #FFF;
+}
+
+@media (min-width: 768px) {
+	
+	.img-bg{
+        width:100%;
+        height:auto;
+    }
+
+	.titulo{
+		margin-top: 220px;
+	}
+
+	.titulo p{
+		margin-bottom: 70px;
+	}
+
+	.titulo p > br{
+		display:inline-block;
+	}
+	
+	.formclinica{
+		margin-top: 150px;
+	}
+}

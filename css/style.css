@@ -322,6 +322,7 @@ a:focus{
     color:#EEE;
 }
 
+
 @media (max-width: 768px) {
 	.form-horizontal .control-label{
 		padding-left:15px;
@@ -338,4 +339,6 @@ a:focus{
     .navbar-brand{
         width: 300px;
     }
+
+   
 }
