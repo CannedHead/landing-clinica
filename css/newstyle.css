@@ -51,12 +51,20 @@ a:focus{
 	background-color: #FFCF0B;
 }
 
+.plasmacapilar{
+	background-color: #01ACBE;
+}
+
 .bg{
 	position: absolute;
 }
 
 .abdominoplastia .bg{
 	border-bottom: 40px solid #219CD8;
+}
+
+.plasmacapilar .bg{
+	border-bottom: 40px solid #013646;
 }
 
 .img-bg{
@@ -211,5 +219,10 @@ a:focus{
 	
 	.formclinica{
 		margin-top: 150px;
+	}
+	
+
+	.heromargin{
+		margin-top:50px;	
 	}
 }
