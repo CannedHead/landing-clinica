@@ -55,6 +55,10 @@ a:focus{
 	background-color: #01ACBE;
 }
 
+.implantesdentales{
+	background-color: #219CD8;
+}
+
 .bg{
 	position: absolute;
 }
@@ -65,6 +69,10 @@ a:focus{
 
 .plasmacapilar .bg{
 	border-bottom: 40px solid #013646;
+}
+
+.implantesdentales .bg{
+	border-bottom: 40px solid #FEFFFD;
 }
 
 .img-bg{
@@ -215,6 +223,10 @@ a:focus{
 
 	.titulo p > br{
 		display:inline-block;
+	}
+
+	.titulohero{
+		margin-top: 80px;
 	}
 	
 	.formclinica{
