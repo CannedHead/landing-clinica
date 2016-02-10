@@ -1,6 +1,6 @@
 
 RewriteEngine On 
-RewriteRule ^mamoplastia$ mamoplastia.html [NC,L]
+RewriteRule ^mamoplastia$ mamoplastiados.html [NC,L]
 RewriteRule ^abdominoplastia$ abdominoplastiados.html [NC,L]
 RewriteRule ^implantesdentales$ implantesdos.html [NC,L]
 RewriteRule ^blefaroplastia$ parpados.html [NC,L]

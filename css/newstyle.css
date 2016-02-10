@@ -59,6 +59,10 @@ a:focus{
 	background-color: #219CD8;
 }
 
+.mamoplastia{
+	background-color: #01BD82;
+}
+
 .bg{
 	position: absolute;
 }
@@ -72,6 +76,10 @@ a:focus{
 }
 
 .implantesdentales .bg{
+	border-bottom: 40px solid #FEFFFD;
+}
+
+.mamoplastia .bg{
 	border-bottom: 40px solid #FEFFFD;
 }
 
