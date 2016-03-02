@@ -48,7 +48,7 @@ a:focus{
 }
 
 .abdominoplastia{
-	background-color: #FFCF0B;
+	background-color: #4DCCFF;
 }
 
 .plasmacapilar{
@@ -56,11 +56,15 @@ a:focus{
 }
 
 .implantesdentales{
-	background-color: #219CD8;
+	background-color: #FFCC01;
 }
 
 .mamoplastia{
-	background-color: #01BD82;
+	background-color: #007CA0;
+}
+
+.ortodoncia{
+	background-color: #01ABA8;
 }
 
 .bg{
@@ -68,7 +72,7 @@ a:focus{
 }
 
 .abdominoplastia .bg{
-	border-bottom: 40px solid #219CD8;
+	border-bottom: 40px solid #00C0FF;
 }
 
 .plasmacapilar .bg{
@@ -76,11 +80,15 @@ a:focus{
 }
 
 .implantesdentales .bg{
-	border-bottom: 40px solid #FEFFFD;
+	border-bottom: 40px solid #3DBED3;
 }
 
 .mamoplastia .bg{
-	border-bottom: 40px solid #FEFFFD;
+	border-bottom: 40px solid #005E84;
+}
+
+.ortodoncia  .bg{
+	border-bottom: 40px solid #008B88;
 }
 
 .img-bg{
@@ -89,8 +97,49 @@ a:focus{
     left: -250px;
 }
 
+.abdominoplastia .hero{
+	color:#FFF;
+	font-size: 1.16em;
+}
+
+.implantesdentales .hero{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	text-shadow: 1px 2px 3px #666;
+	padding-left: 13%;
+	color:#FFF !important;
+}
+
+.mamoplastia .hero{
+	color:#FFF;
+	font-size: 1.16em;
+	margin-top: 6%;
+}
+
+.ortodoncia .hero{
+	color:#FFF;
+	font-size: 1.16em;
+	margin-top: 6%;
+}
+
 .titulo{
 	margin-top: 120px;
+}
+
+.abdominoplastia .titulo {
+    margin-top: 35%;
+}
+
+.implantesdentales .titulodos {
+    margin-top: 14%;
+}
+
+.abdominoplastia .titulo h2{
+	color:#FFF;
+}
+
+.implantesdentales .titulodos h2{
+	color:#3DBED3;
 }
 
 .titulo h2{
@@ -102,6 +151,10 @@ a:focus{
 .titulo ul > li > i{
 	color:#219CD8;
 	margin-right: 4px;
+}
+
+.implantesdentales .titulodos p{
+	color:#000;
 }
 
 .titulo p{
@@ -126,9 +179,22 @@ a:focus{
 	text-shadow: 1px 2px 3px #666;
 }
 
+.implantesdentales .titulodos h3{
+	color: #3DBED3;
+	text-shadow: 1px 0px 1px #666;
+}
+
 .titulodos h3{
 	color:#FFDA00;
 	text-shadow: 1px 2px 3px #666;
+}
+
+.implantesdentales .titulodos ul > li {
+	color:#000;
+}
+
+.implantesdentales .titulodos ul > li > i{
+	color:#3DBED3;
 }
 
 .titulodos ul > li {
@@ -149,6 +215,22 @@ a:focus{
 
 .titulodos p > br{
 	display:none;
+}
+
+.abdominoplastia .incluyelist{
+	color:#FFF;
+}
+
+.abdominoplastia .incluyelist i{
+	color:#FFDB01;
+}
+
+.abdominoplastia .herotwo{
+	color:#FFF;
+}
+
+.abdominoplastia .subhero a {
+    color: #FFF;
 }
 
 .formclinica{
@@ -195,6 +277,14 @@ a:focus{
 .subhero a{
 	color:#000;
 	text-decoration: none;
+}
+
+.mamoplastia .subhero a {
+    color: #FFF;
+}
+
+.ortodoncia .subhero a {
+    color: #FFF;
 }
 
 .redes-container{
@@ -250,6 +340,35 @@ a:focus{
 	color: #FFF;
 }
 
+.abdominoplastia .flecha{
+	position: absolute;
+	width:40%;
+	bottom: 0;
+	right: 10%;
+}
+
+.implantesdentales .flecha{
+	position: absolute;
+	width: 50%;
+	bottom: 16%;
+	right: -48%;
+}
+
+.mamoplastia .flecha{
+	position: absolute;
+	width: 50%;
+	bottom: -3%;
+	right: -10%;
+}
+
+
+.ortodoncia .flecha{
+	position: absolute;
+	width: 50%;
+	bottom: -16%;
+	right: -10%;
+}
+
 @media (min-width: 768px) {
 	
 	.img-bg{
@@ -295,5 +414,10 @@ a:focus{
 
 	.heromargin{
 		margin-top:50px;	
+	}
+
+
+	.abdominoplastia .titulo {
+	    margin-top: 14%;
 	}
 }
