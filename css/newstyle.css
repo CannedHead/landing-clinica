@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:700,400);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
 
+/*5701f278c4c8a60b00bcb2e8*/
 @font-face {
     font-family: 'novaregular';
     src: url('../fonts/nova_alt_regular-webfont.eot');
@@ -48,7 +49,7 @@ a:focus{
 }
 
 .abdominoplastia{
-	background-color: #4DCCFF;
+	background-color: #04AFE3;
 }
 
 .plasmacapilar{
@@ -56,7 +57,7 @@ a:focus{
 }
 
 .implantesdentales{
-	background-color: #FFCC01;
+	background-color: #27A0E3;
 }
 
 .mamoplastia{
@@ -67,12 +68,20 @@ a:focus{
 	background-color: #01ABA8;
 }
 
+.rinoplastia{
+	background-color: #00D0BA;
+}
+
+.minilifting{
+	background-color: #3464BC;
+}
+
 .bg{
 	position: absolute;
 }
 
 .abdominoplastia .bg{
-	border-bottom: 40px solid #00C0FF;
+	border-bottom: 40px solid #0189B9;
 }
 
 .plasmacapilar .bg{
@@ -80,15 +89,23 @@ a:focus{
 }
 
 .implantesdentales .bg{
-	border-bottom: 40px solid #3DBED3;
+	border-bottom: 40px solid #1A96C0;
 }
 
 .mamoplastia .bg{
 	border-bottom: 40px solid #005E84;
 }
 
+.minilifting .bg{
+	border-bottom: 40px solid #285895;
+}
+
 .ortodoncia  .bg{
 	border-bottom: 40px solid #008B88;
+}
+
+.rinoplastia .bg{
+	border-bottom: 40px solid #00AC9E;
 }
 
 .img-bg{
@@ -99,7 +116,9 @@ a:focus{
 
 .abdominoplastia .hero{
 	color:#FFF;
-	font-size: 1.16em;
+	font-size: 22px;
+	margin-top: 185px;
+	text-shadow: 1px 2px 3px #FF3B40;
 }
 
 .implantesdentales .hero{
@@ -130,8 +149,20 @@ a:focus{
     margin-top: 35%;
 }
 
+.abdominoplastia .titulodos h2 {
+    font-size: 22px;
+}
+
 .implantesdentales .titulodos {
-    margin-top: 14%;
+    margin-top: 5%;
+}
+
+.rinoplastia .titulodos {
+    margin-top: 5%;
+}
+
+.abdominoplastia .titulodos {
+    margin-top: 5%;
 }
 
 .abdominoplastia .titulo h2{
@@ -139,7 +170,15 @@ a:focus{
 }
 
 .implantesdentales .titulodos h2{
-	color:#3DBED3;
+	color:#FFF;
+}
+
+.minilifting .titulodos {
+    margin-top: 5%;
+}
+
+.minilifting .titulotres {
+	margin-top: 50px;
 }
 
 .titulo h2{
@@ -154,7 +193,7 @@ a:focus{
 }
 
 .implantesdentales .titulodos p{
-	color:#000;
+	color:#FFF;
 }
 
 .titulo p{
@@ -175,12 +214,12 @@ a:focus{
 .titulodos h2{
 	color:#FFF;
 	text-transform: uppercase;
-	margin-top: 94px;
+	margin-top: 150px;
 	text-shadow: 1px 2px 3px #666;
 }
 
 .implantesdentales .titulodos h3{
-	color: #3DBED3;
+	color: #FFF;
 	text-shadow: 1px 0px 1px #666;
 }
 
@@ -190,11 +229,11 @@ a:focus{
 }
 
 .implantesdentales .titulodos ul > li {
-	color:#000;
+	color:#FFF;
 }
 
 .implantesdentales .titulodos ul > li > i{
-	color:#3DBED3;
+	color:#FFF;
 }
 
 .titulodos ul > li {
@@ -222,7 +261,7 @@ a:focus{
 }
 
 .abdominoplastia .incluyelist i{
-	color:#FFDB01;
+	color:#FFF;
 }
 
 .abdominoplastia .herotwo{
@@ -233,6 +272,10 @@ a:focus{
     color: #FFF;
 }
 
+.minilifting .subhero a {
+    color: #FFF;
+}
+
 .formclinica{
 	margin-top: 50px;
 	background-color: #FFF;
@@ -240,8 +283,34 @@ a:focus{
 	margin-bottom: 40px;
 }
 
+.informhero{
+	text-align:center;
+	font-weight: bold;
+	color:#27A0E3;
+}
+
 .btn-form, .btn-form:hover, .btn-form:active, .btn-form:focus{
 	background-color: #259DDA;
+	color:#FFF;
+}
+
+.abdominoplastia .btn-form, .abdominoplastia .btn-form:hover, .abdominoplastia .btn-form:active, .abdominoplastia .btn-form:focus{
+	background-color: #FF0033;
+	color:#FFF;
+}
+
+.implantesdentales .btn-form, .implantesdentales .btn-form:hover, .implantesdentales .btn-form:active, .implantesdentales .btn-form:focus{
+	background-color: #FA0038;
+	color:#FFF;
+}
+
+.rinoplastia .btn-form, .rinoplastia .btn-form:hover, .rinoplastia .btn-form:active, .rinoplastia .btn-form:focus{
+	background-color: #FC4F00;
+	color:#FFF;
+}
+
+.minilifting .btn-form, .minilifting .btn-form:hover, .minilifting .btn-form:active, .minilifting .btn-form:focus{
+	background-color: #FE9400;
 	color:#FFF;
 }
 
@@ -279,12 +348,62 @@ a:focus{
 	text-decoration: none;
 }
 
+.implantesdentales .subhero a, .rinoplastia .subhero a{
+	color:#FFF;
+}
+
 .mamoplastia .subhero a {
     color: #FFF;
 }
 
 .ortodoncia .subhero a {
     color: #FFF;
+}
+
+.medioshero{
+	position: relative;
+	font-family: 'novaregular';
+	text-transform: uppercase;
+	font-weight: 900;
+	color:#FFF;
+}
+
+.medioshero:after {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 0 15px;
+  margin-left: -7.5px;
+  z-index: 1;
+}
+
+.abdominoplastia .medioshero:after {
+  border-color: #04AFE3 transparent transparent;
+}
+
+.implantesdentales .medioshero:after {
+  border-color: #27A0E3 transparent transparent;
+}
+
+.rinoplastia .medioshero:after {
+  border-color: #00D0BA transparent transparent;
+}
+
+.minilifting .medioshero:after {
+  border-color: #3464BC transparent transparent;
+}
+
+.mediosdepago{
+	background-color: #FFF;
+	padding: 70px 0 30px;
+}
+
+.mediosdepago img{
+	margin-bottom: 25px;
 }
 
 .redes-container{
@@ -331,6 +450,46 @@ a:focus{
 	font-size: 1.1em;
 }
 
+.abdominoplastia  .redes{
+	background-color: #04AFE3;
+	color:#FFF;
+}
+
+.implantesdentales .redes{
+	background-color: #27A0E3;
+	color:#FFF;
+}
+
+.rinoplastia  .redes{
+	background-color: #00D0BA;
+	color:#FFF;
+}
+
+.minilifting  .redes{
+	background-color: #3464BC;
+	color:#FFF;
+}
+
+.abdominoplastia .redes ul > li , .implantesdentales .redes ul > li, .rinoplastia .redes ul > li, .minilifting .redes ul > li  {
+	background-color:#FFF;
+}
+
+.abdominoplastia .redes ul > li > a {
+	color: #27A0E3;
+}
+
+.implantesdentales .redes ul > li > a {
+	color: #27A0E3;
+}
+
+.rinoplastia .redes ul > li > a {
+	color: #00D0BA;
+}
+
+.minilifting .redes ul > li > a {
+	color: #3464BC;
+}
+
 .footer{
 	background-color: #00AFE8;
 }
@@ -338,6 +497,22 @@ a:focus{
 .subfooter{
 	background-color: #018FC1;
 	color: #FFF;
+}
+
+.abdominoplastia .footer, .abdominoplastia .subfooter{
+	background-color: #008CBB;
+}
+
+.implantesdentales .footer, .implantesdentales .subfooter{
+	background-color: #1A96C0;
+}
+
+.rinoplastia .footer, .rinoplastia .subfooter{
+	background-color: #00AC9F;
+}
+
+.minilifting .footer, .minilifting .subfooter{
+	background-color: #275995;
 }
 
 .abdominoplastia .flecha{
