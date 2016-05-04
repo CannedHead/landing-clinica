@@ -139,7 +139,9 @@ a:focus{
 .mamoplastia .hero{
 	color:#FFF;
 	font-size: 1.16em;
-	margin-top: 6%;
+	margin-top: 35%;
+	text-shadow: 1px 2px 3px #666;
+	font-weight: bold;
 }
 
 .ortodoncia .hero{
@@ -228,10 +230,14 @@ a:focus{
 	margin-top: 120px;
 }
 
+.mamoplastia .titulodos {
+    margin-top: 84px;
+}
+
 .titulodos h2{
 	color:#FFF;
 	text-transform: uppercase;
-	margin-top: 150px;
+	margin-top: 35px;
 	text-shadow: 1px 2px 3px #666;
 }
 
@@ -263,14 +269,18 @@ a:focus{
 }
 
 .titulodos p{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	color:#FFF;
-	text-transform: uppercase;
 	margin-top:20px;
 }
 
 .titulodos p > br{
 	display:none;
+}
+
+.titulodos p.programar{
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .abdominoplastia .incluyelist{
@@ -511,6 +521,7 @@ a:focus{
 
 .protesis .redes ul > li, .abdominoplastia .redes ul > li , .implantesdentales .redes ul > li, .rinoplastia .redes ul > li, .mamoplastia .redes ul > li, .minilifting .redes ul > li  {
 	background-color:#FFF;
+	margin: 0 5px;
 }
 
 .abdominoplastia .redes ul > li > a {
@@ -623,7 +634,7 @@ a:focus{
 	}
 	
 	.mamoplastia .titulodos {
-	    margin-top: 145px;
+	    margin-top: 100px;
 		margin-bottom: 50px;
 	}
 
@@ -646,6 +657,10 @@ a:focus{
 	.formclinica{
 		margin-top: 150px;
 	}
+	
+	.formclinica .form-group{
+		padding: 0px;
+	}
 
 	.mamoplastia .formclinica{
 		margin-top: 300px;
@@ -661,6 +676,11 @@ a:focus{
 	}
 
 	.mamoplastia .hero {
-	    margin-top: 20%;
+	    margin-top: 30%;
+	    font-weight: bold;
+	}
+
+	.subfooter h3 {
+    	font-size: 22px;
 	}
 }
