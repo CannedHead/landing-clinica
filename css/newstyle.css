@@ -684,3 +684,14 @@ a:focus{
     	font-size: 22px;
 	}
 }
+
+
+@media (min-width: 1920px) {
+	.mamoplastia .titulodos {
+    	margin-top: 145px;
+    }
+
+    .mamoplastia .hero {
+    	margin-top: 80%;
+	}
+}
