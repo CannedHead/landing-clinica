@@ -61,7 +61,7 @@ a:focus{
 }
 
 .mamoplastia{
-	background-color: #007CA0;
+	background-color: #FCB131;
 }
 
 .ortodoncia{
@@ -74,6 +74,10 @@ a:focus{
 
 .minilifting{
 	background-color: #3464BC;
+}
+
+.protesis{
+	background-color: #27A9E0;
 }
 
 .bg{
@@ -93,7 +97,7 @@ a:focus{
 }
 
 .mamoplastia .bg{
-	border-bottom: 40px solid #005E84;
+	border-bottom: 40px solid #F29820;
 }
 
 .minilifting .bg{
@@ -108,6 +112,10 @@ a:focus{
 	border-bottom: 40px solid #00AC9E;
 }
 
+.protesis .bg{
+	border-bottom: 40px solid #186395;
+}
+
 .img-bg{
     width:auto;
     height:50%;
@@ -116,9 +124,8 @@ a:focus{
 
 .abdominoplastia .hero{
 	color:#FFF;
-	font-size: 22px;
-	margin-top: 185px;
-	text-shadow: 1px 2px 3px #FF3B40;
+	font-size: 14px;
+	margin-top: 125px;
 }
 
 .implantesdentales .hero{
@@ -171,6 +178,16 @@ a:focus{
 
 .implantesdentales .titulodos h2{
 	color:#FFF;
+	text-shadow: 1px 2px 3px #FFB800;
+}
+
+.protesis .titulodos{
+	margin-top: 22px;
+}
+
+.protesis .titulodos h2{
+	color:#FFF;
+	text-shadow: 1px 2px 3px #F6931E;
 }
 
 .minilifting .titulodos {
@@ -272,6 +289,10 @@ a:focus{
     color: #FFF;
 }
 
+.protesis .subhero a {
+    color: #FFF;
+}
+
 .minilifting .subhero a {
     color: #FFF;
 }
@@ -295,12 +316,12 @@ a:focus{
 }
 
 .abdominoplastia .btn-form, .abdominoplastia .btn-form:hover, .abdominoplastia .btn-form:active, .abdominoplastia .btn-form:focus{
-	background-color: #FF0033;
+	background-color: #FF3B40;
 	color:#FFF;
 }
 
 .implantesdentales .btn-form, .implantesdentales .btn-form:hover, .implantesdentales .btn-form:active, .implantesdentales .btn-form:focus{
-	background-color: #FA0038;
+	background-color: #FFB800;
 	color:#FFF;
 }
 
@@ -393,8 +414,16 @@ a:focus{
   border-color: #00D0BA transparent transparent;
 }
 
+.mamoplastia .medioshero::after {
+    border-color: #FCB131 transparent transparent;
+}
+
 .minilifting .medioshero:after {
   border-color: #3464BC transparent transparent;
+}
+
+.protesis .medioshero:after {
+  border-color: #27A9E0 transparent transparent;
 }
 
 .mediosdepago{
@@ -465,12 +494,22 @@ a:focus{
 	color:#FFF;
 }
 
+.mamoplastia  .redes{
+	background-color: #FCB131;
+	color:#FFF;
+}
+
 .minilifting  .redes{
 	background-color: #3464BC;
 	color:#FFF;
 }
 
-.abdominoplastia .redes ul > li , .implantesdentales .redes ul > li, .rinoplastia .redes ul > li, .minilifting .redes ul > li  {
+.protesis .redes{
+	background-color: #27A9E0;
+	color:#FFF;
+}
+
+.protesis .redes ul > li, .abdominoplastia .redes ul > li , .implantesdentales .redes ul > li, .rinoplastia .redes ul > li, .mamoplastia .redes ul > li, .minilifting .redes ul > li  {
 	background-color:#FFF;
 }
 
@@ -486,8 +525,16 @@ a:focus{
 	color: #00D0BA;
 }
 
+.mamoplastia .redes ul > li > a {
+	color: #FCB131;
+}
+
 .minilifting .redes ul > li > a {
 	color: #3464BC;
+}
+
+.protesis .redes ul > li > a {
+	color: #27A9E0;
 }
 
 .footer{
@@ -511,8 +558,16 @@ a:focus{
 	background-color: #00AC9F;
 }
 
+.mamoplastia .footer, .mamoplastia .subfooter{
+	background-color: #F29820;
+}
+
 .minilifting .footer, .minilifting .subfooter{
 	background-color: #275995;
+}
+
+.protesis .footer, .protesis .subfooter{
+	background-color: #186395;
 }
 
 .abdominoplastia .flecha{
@@ -566,6 +621,15 @@ a:focus{
 	.titulodos{
 		margin-top: 235px;
 	}
+	
+	.mamoplastia .titulodos {
+	    margin-top: 145px;
+		margin-bottom: 50px;
+	}
+
+	.protesis .titulodos{
+		margin-top: 55px;
+	}
 
 	.titulodos p{
 		margin-bottom: 25px;
@@ -594,5 +658,9 @@ a:focus{
 
 	.abdominoplastia .titulo {
 	    margin-top: 14%;
+	}
+
+	.mamoplastia .hero {
+	    margin-top: 20%;
 	}
 }

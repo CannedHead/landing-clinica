@@ -1,6 +1,6 @@
 
 RewriteEngine On 
-RewriteRule ^rinoplastia$ rinoplastia.html [NC,L]
 RewriteRule ^implantesdentales$ implantes.html [NC,L]
+RewriteRule ^mamoplastia$ mamoplastia.html [NC,L]
 RewriteRule ^abdominoplastia$ abdominoplastia.html [NC,L]
-RewriteRule ^minilifting$ minilifting.html [NC,L]
+RewriteRule ^protesisdentales$ protesis.html [NC,L]
