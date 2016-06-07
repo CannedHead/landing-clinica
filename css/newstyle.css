@@ -52,6 +52,10 @@ a:focus{
 	background-color: #04AFE3;
 }
 
+.blefaroplastia{
+	background-color: #27A9E0;
+}
+
 .plasmacapilar{
 	background-color: #01ACBE;
 }
@@ -90,6 +94,10 @@ a:focus{
 
 .plasmacapilar .bg{
 	border-bottom: 40px solid #013646;
+}
+
+.blefaroplastia .bg{
+	border-bottom: 40px solid #186395;
 }
 
 .implantesdentales .bg{
@@ -136,6 +144,14 @@ a:focus{
 	color:#FFF !important;
 }
 
+.blefaroplastia .hero{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	text-shadow: 1px 2px 3px #666;
+	padding-left: 13%;
+	color:#FFF !important;
+}
+
 .mamoplastia .hero{
 	color:#FFF;
 	font-size: 1.16em;
@@ -163,7 +179,11 @@ a:focus{
 }
 
 .implantesdentales .titulodos {
-    margin-top: 5%;
+    margin-top: 54%;
+}
+
+.blefaroplastia .titulodos {
+    margin-top:45%;
 }
 
 .rinoplastia .titulodos {
@@ -171,7 +191,7 @@ a:focus{
 }
 
 .abdominoplastia .titulodos {
-    margin-top: 5%;
+    margin-top: 20%;
 }
 
 .abdominoplastia .titulo h2{
@@ -179,6 +199,11 @@ a:focus{
 }
 
 .implantesdentales .titulodos h2{
+	color:#FFF;
+	text-shadow: 1px 2px 3px #FFB800;
+}
+
+.blefaroplastia .titulodos h2{
 	color:#FFF;
 	text-shadow: 1px 2px 3px #FFB800;
 }
@@ -211,7 +236,19 @@ a:focus{
 	margin-right: 4px;
 }
 
+.implantesdentales .titulodos p.first {
+	margin-top:40%;
+}
+
 .implantesdentales .titulodos p{
+	color:#FFF;
+}
+
+.blefaroplastia .titulodos p.first {
+	margin-top:45%;
+}
+
+.blefaroplastia .titulodos p{
 	color:#FFF;
 }
 
@@ -234,6 +271,10 @@ a:focus{
     margin-top: 84px;
 }
 
+.mamoplastia .titulodos h2 {
+    margin-top: 84px;
+}
+
 .titulodos h2{
 	color:#FFF;
 	text-transform: uppercase;
@@ -242,6 +283,11 @@ a:focus{
 }
 
 .implantesdentales .titulodos h3{
+	color: #FFF;
+	text-shadow: 1px 0px 1px #666;
+}
+
+.blefaroplastia .titulodos h3{
 	color: #FFF;
 	text-shadow: 1px 0px 1px #666;
 }
@@ -256,6 +302,14 @@ a:focus{
 }
 
 .implantesdentales .titulodos ul > li > i{
+	color:#FFF;
+}
+
+.blefaroplastia .titulodos ul > li {
+	color:#FFF;
+}
+
+.blefaroplastia .titulodos ul > li > i{
 	color:#FFF;
 }
 
@@ -331,7 +385,12 @@ a:focus{
 }
 
 .implantesdentales .btn-form, .implantesdentales .btn-form:hover, .implantesdentales .btn-form:active, .implantesdentales .btn-form:focus{
-	background-color: #FFB800;
+	background-color: #E11C24;
+	color:#FFF;
+}
+
+.blefaroplastia .btn-form, .blefaroplastia .btn-form:hover, .blefaroplastia .btn-form:active, .blefaroplastia .btn-form:focus{
+	background-color: #F6931E;
 	color:#FFF;
 }
 
@@ -383,6 +442,10 @@ a:focus{
 	color:#FFF;
 }
 
+.blefaroplastia .subhero a{
+	color:#FFF;
+}
+
 .mamoplastia .subhero a {
     color: #FFF;
 }
@@ -417,6 +480,10 @@ a:focus{
 }
 
 .implantesdentales .medioshero:after {
+  border-color: #27A0E3 transparent transparent;
+}
+
+.blefaroplastia .medioshero:after {
   border-color: #27A0E3 transparent transparent;
 }
 
@@ -499,6 +566,11 @@ a:focus{
 	color:#FFF;
 }
 
+.blefaroplastia .redes{
+	background-color: #27A0E3;
+	color:#FFF;
+}
+
 .rinoplastia  .redes{
 	background-color: #00D0BA;
 	color:#FFF;
@@ -519,7 +591,7 @@ a:focus{
 	color:#FFF;
 }
 
-.protesis .redes ul > li, .abdominoplastia .redes ul > li , .implantesdentales .redes ul > li, .rinoplastia .redes ul > li, .mamoplastia .redes ul > li, .minilifting .redes ul > li  {
+.protesis .redes ul > li, .abdominoplastia .redes ul > li , .implantesdentales .redes ul > li,  .blefaroplastia .redes ul > li, .rinoplastia .redes ul > li, .mamoplastia .redes ul > li, .minilifting .redes ul > li  {
 	background-color:#FFF;
 	margin: 0 5px;
 }
@@ -529,6 +601,10 @@ a:focus{
 }
 
 .implantesdentales .redes ul > li > a {
+	color: #27A0E3;
+}
+
+.blefaroplastia .redes ul > li > a {
 	color: #27A0E3;
 }
 
@@ -565,6 +641,10 @@ a:focus{
 	background-color: #1A96C0;
 }
 
+.blefaroplastia .footer, .blefaroplastia .subfooter{
+	background-color: #1A96C0;
+}
+
 .rinoplastia .footer, .rinoplastia .subfooter{
 	background-color: #00AC9F;
 }
@@ -589,6 +669,13 @@ a:focus{
 }
 
 .implantesdentales .flecha{
+	position: absolute;
+	width: 50%;
+	bottom: 16%;
+	right: -48%;
+}
+
+.blefaroplastia .flecha{
 	position: absolute;
 	width: 50%;
 	bottom: 16%;
@@ -632,14 +719,38 @@ a:focus{
 	.titulodos{
 		margin-top: 235px;
 	}
+
+	.abdominoplastia .titulodos {
+	    margin-top: 5%;
+	}
 	
 	.mamoplastia .titulodos {
 	    margin-top: 100px;
 		margin-bottom: 50px;
 	}
 
+	.mamoplastia .titulodos h2 {
+	    margin-top: 120px;
+	}
+
 	.protesis .titulodos{
 		margin-top: 55px;
+	}
+
+	.implantesdentales .titulodos {
+	    margin-top:0;
+	}
+	
+	.implantesdentales .titulodos p.first {
+		margin-top:36%;
+	}
+
+	.blefaroplastia .titulodos {
+	    margin-top:0;
+	}
+	
+	.blefaroplastia .titulodos p.first {
+		margin-top:35%;
 	}
 
 	.titulodos p{
@@ -685,6 +796,29 @@ a:focus{
 	}
 }
 
+@media (min-width: 1200px) {
+	.abdominoplastia .titulodos {
+	    margin-top: 11%;
+	}
+
+	.implantesdentales .titulodos p.first {
+		margin-top:23%;
+	}
+}
+
+@media (min-width: 1600px) {
+	.implantesdentales .titulodos p.first {
+		margin-top:28%;
+	}
+
+	.blefaroplastia .titulodos p.first {
+		margin-top:28%;
+	}
+
+	.mamoplastia .titulodos h2 {
+	    margin-top: 85%;
+	}
+}
 
 @media (min-width: 1920px) {
 	.mamoplastia .titulodos {
@@ -694,4 +828,5 @@ a:focus{
     .mamoplastia .hero {
     	margin-top: 80%;
 	}
+
 }
